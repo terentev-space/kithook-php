@@ -20,10 +20,10 @@ class Builder
     }
 
     /**
-     * @param string $id
+     * @param string|null $id
      * @return $this
      */
-    public function withId(string $id): self
+    public function withId(?string $id): self
     {
         $this->blueprint->setId($id);
         return $this;
